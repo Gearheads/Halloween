@@ -1,0 +1,10 @@
+version: '2'
+services:
+  jack:
+     image: casaler/halloween:python
+     labels:
+       - "interlock.hostname=halloween"
+       - "interlock.domain=<domain>"
+     ports:
+       - "5000"
+     restart: always
