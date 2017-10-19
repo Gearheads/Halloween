@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>HAPPY HALLOWEEN</title>
+        <link rel="stylesheet" type="text/css" href="/static/halloween.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Trick or Treat</h1>
+            <ul id="game">
+                <!-- first row -->
+                <li data-pos="0,0"></li>
+                <li data-pos="0,1"></li>
+                <li data-pos="0,2"></li>
+                <!-- second row -->
+                <li data-pos="1,0"></li>
+                <li data-pos="1,1"></li>
+                <li data-pos="1,2"></li>
+                <!-- third row -->
+                <li data-pos="2,0"></li>
+                <li data-pos="2,1"></li> 
+                <li data-pos="2,2"></li>
+            </ul>
+            
+            <button id="reset-game">Try Again!</button>
+            
+            <!-- Game Messages -->
+            <div id="game-messages">
+                <span class="game-over">Game Over</span>
+            </div>
+        </div>
+        <a href="https://www.youtube.com/watch?v=2t-t3EvTQD4">
+            <img class="zero" src="{{url_for('static', filename='zero.jpg')}}"/>
+        </a>
+        <script type="text/javascript" src="{{ url_for('static', filename='halloween.js') }}"></script>
+    </body>
+</html>
