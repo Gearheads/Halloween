@@ -19,7 +19,8 @@ h1 {
 }
 
 .zero {
-    padding: 150px;
+    position: relative;
+    top: 150;
 }
 
 #game {
