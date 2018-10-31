@@ -12,3 +12,7 @@ Objective: Crush as many evil pumpkins as you can without getting caught!
 ```
 docker run -it --name happy_halloween -d -p 5000:5000 -l interlock.hostname="halloween" -l interlock.domain=".com" halloween
 ```
+or
+```
+docker-compose up -d
+```
